@@ -1,0 +1,63 @@
+<!--primeras etiquetas-->
+
+<!DOCTYPE html>  <!-- me dice que versión de html estamos usando -->
+<html lang = "es"> <!-- idioma al cual estamos haciendo referencia dentro de la página -->
+ 
+<head> 
+    <meta charset = "UTF-8"> <!-- (UTF-8) Leer CONJUNTO DE CARACTERES "raros" QUE VAMOS A USAR EN LA PÁG (´,¨,ñ,etc)-->
+    <meta http-equiv = "X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--me escala la pág, mejora la visualización del usuario-->
+    <meta name="description" content="Fotos de gatitos"> <!--lo que queramos que aparezca cuando busquen nuestra página-->
+    <meta name="robots" content="index, unfollow"> <!--configuramos a los robots para que nos muestre o no-->
+    <title>Hola mundo</title> <!--el título de nuestra página-->
+
+</head> <!--etiqueta de cierre, se reconoce por el / -->
+
+<body>
+    <header>
+        <img src="./assets/imag/Foto.jfif" alt="img-cluster-amarillo"> 
+        <!--me abre una imagen que tengo en la carpeta, para que me salga pongo ./-->
+        <!--alt en imagen es la descripción que le vamos a poner-->
+        
+        <nav>
+
+            <!-- <h1> Hola Mundo </h1> etiqueta de mayor relevancia-->
+          <!-- <h2> Encabezado H2 </h2> --><!--encabezado que le sigue en importancia (+ pequeño)-->
+            <h1>Mi primer formulario</h1>
+        </nav>
+
+    </header>
+
+    <main>
+       <!-- <p>Hola soy un párrafo</p> etiqueta párrafos-->
+       <!-- <a href= "https://github.com/LuisaCastano40/Projects" >
+            perfil Github</a> etiquetas URLS-->
+
+            <form action=""> <!--qué queremos hacer obtener o enviar ingo ()-->
+                <label for=""></label> <!--etiqueta del input-->
+                <input type="text"> <br><!--campo de entradas, text recibe todos los caracteres-->
+                <label for=""></label>
+                <input type="number"> <br> <!--sólo recibe números-->
+                <label for="city">Ciudades</label>
+                <select>
+                    <option value="select">Seleccione su ciudad:</option>>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Cartagena">Cartagena</option>
+                </select>
+                <br>
+                <label for="Nombre">sugerencias</label>
+                <textarea name="sugerencias"></textarea> <!--área de texto-->
+                <br>
+                <button type="submit">enviar</button>
+            </form>
+
+    </main>
+
+    <footer>
+        <h2>Contáctenos</h2> <!--puede incluir section y articles, según necesidad-->
+    </footer>
+
+</body>
+
+
+</html> <!--etiqueta de cierre, se reconoce por el / -->
