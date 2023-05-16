@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap');
-body {
+
+/*Normal Mode*/
+.body-1 {
 
     padding: 0;
     margin: 0;
@@ -103,6 +105,43 @@ body {
 .ítem-3 textarea:hover {
     background-color:rgb(207, 204, 207); 
 }
+.whatsapp {
+    color:  rgb(51, 22, 118);;
+}
+
+
+/*Dark Mode*/
+.body-2{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter',sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0); 
+    color: white;  
+
+}
+.contenedor-1-2 {
+    width: 70%;
+    height: 80vh;
+    background-color: rgb(51, 22, 118);
+    box-shadow: 5px 5px 10px white;
+    border-radius: 5vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.whatsapp-2 {
+    color: white;
+}
 
 @media screen and (min-width: 360px) and (max-width: 375px){
 
@@ -113,6 +152,14 @@ body {
         flex-direction: column;
         justify-content: space-between;
     }
+    .contenedor-1-2{
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     .ítem-1 img {
         display: none; 
     }
