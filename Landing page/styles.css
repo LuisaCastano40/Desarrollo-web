@@ -248,6 +248,61 @@ header label{
     cursor: pointer;
 }
 
+/*Top 5-carrusel*/
+
+.galeria{
+    background-color: var(--color5);
+    display: flex;
+    overflow-y: auto;
+}
+.topbooks{
+    margin: 20px;
+    position: relative;
+}
+.topbooks img{
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+    width: 250px;
+    display: block;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow:5px 5px 10px rgb(0, 0, 0,.212); 
+}
+.cuerpo-topbooks{
+    position: absolute;
+    width: 85%;
+    height: 92%;
+    top: 0;
+    margin: 21px;
+    border-radius: 20px;
+    transform: scale(0);
+    background: hsl(34, 76%, 90%, 0.9);
+    transition: transform .5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Inter',sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--color5);
+}
+.cuerpo-topbooks h4{
+    font-size: 1.2rem;
+}
+.calif{
+    display: flex;
+    color: var(--color4);
+    padding: 10px 0 10px 0;
+}
+.topbooks:hover .cuerpo-topbooks{
+    transform: scale(1);
+    cursor: pointer;
+}
+
+
 /*Contáctenos*/
 .contactenos{
     display: flex;
@@ -307,6 +362,8 @@ footer{
 .whatsapp, .instagram{
     color: var(--color1);
 }
+
+
 
 /*responsivo*/
 @media (max-width:1050px){
