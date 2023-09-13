@@ -8,12 +8,11 @@
         <meta http-equiv = "X-UA-Compatible" content="IE=edge, chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./estilos.css">
-        <script src="./Java.js"></script>
         <title>Formulario datos personales</title>
     </head>
 
     <body class="body-1">
-
+        
         <section class="contenedor-1">
 
             <header>
@@ -29,8 +28,9 @@
             </header>
 
             <main>
-                        
-                 <h3 class="subtítulo-1">Información básica y de contacto</h3>
+            
+                <form action="">
+                    <h3 class="subtítulo-1">Información básica y de contacto</h3>
 
                  <section class="ítem-2">
                     <article class="input-box">
@@ -88,14 +88,15 @@
                         <textarea name="descripción"></textarea>
                         <br>
                     
-                 </section>
+                    </section>
                         
 
-                <section class="ítem-4">
-                    <article class="button">
-                        <button type="submit">Enviar</button>
-                    </article>
-                </section>
+                     <section class="ítem-4">
+                        <button type="submit" class="btn" data-btn ="">Enviar</button>
+                     </section>
+
+                </form>
+
             </main>
 
         </section>
@@ -115,5 +116,5 @@
         <button onclick="normalMode()">Normal Mode</button>
     </section>
         
-
+    <script src="./Java.js"></script>
     </body>
